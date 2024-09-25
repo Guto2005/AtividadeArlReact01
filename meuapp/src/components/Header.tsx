@@ -3,14 +3,21 @@ import {StyleSheet, Text, View} from 'react-native';
 
 export default function Header(){
     return (
-        <View>
-            <Text style={headerStyle.text}>Meu Header</Text>
+        <View style={headerStyle.container}>
+            <Text style={headerStyle.text}>Turn On/Off</Text>
         </View>
     )
 }
     const headerStyle = StyleSheet.create({
+        container: {
+            backgroundColor:"#000",
+            width:"100%",
+            height:"40%",
+            justifyContent:"center",
+            alignItems:'center',
+        },
         text: {
-          backgroundColor:'#0f0',
+          backgroundColor:'#fff',
           color: '#00f',
           fontWeight: 'bold',
           fontSize: 30,
